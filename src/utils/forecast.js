@@ -10,7 +10,7 @@ const forecast=(longitude,latitude,callback)=>{
           callback('some information not included in url',undefined)
         }
         else{
-            callback(undefined,` ${body.current.weather_descriptions[0]}.It is ${body.current.temperature} and feels like ${body.current.feelslike}`)
+            callback(undefined,` ${body.current.weather_descriptions[0]}.It is ${body.current.temperature} and feels like ${body.current.feelslike}.and humidity is ${body.current.humidity}`)
             // callback(undefined,{
             //     Description:body.current.weather_descriptions[0],
             //     Temperature:body.current.temperature,
